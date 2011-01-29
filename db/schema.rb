@@ -10,6 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20110127221450) do
+
+  create_table "available_rental_truck_view", :id => false, :force => true do |t|
+    t.string "unit_number"
+    t.string "category"
+    t.string "rent_group"
+    t.string "make"
+    t.string "model"
+    t.string "branch_number"
+    t.string "rent_type"
+    t.string "rent_status"
+    t.string "year_made"
+    t.string "branch_name"
+    t.string "branch_phone"
+  end
 
 end

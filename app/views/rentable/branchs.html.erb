@@ -1,0 +1,23 @@
+<h1>Listings for <%= params[:category] %> <%= params[:rent_group]%> at branch <%= params[:branch_number]%></h1>
+
+<% @rent_trucks.each do |rent_truck| %>
+<dl class="truck_listing">
+  <dt>Make</dt>
+  <dd><%= rent_truck.make %></dd>
+  
+  <dt>Model</dt>
+  <dd><%= rent_truck.model %></dd>
+  
+  <dt>Unit #</dt>
+  <dd><%= rent_truck.unit_number %></dd>
+  
+  <dt>man. yr</dt>
+  <dd><%= rent_truck.year_made %></dd>
+  
+  <dt>Status</dt>
+  <dd><%= rent_truck.rent_status %></dd>
+  
+  <dt>location </dt>
+  <dd><%= link_to rent_truck.branch_name, 'tel:'+rent_truck.branch_phone, :class => 'telophone_number' %></dd>
+</dl>
+<% end %>

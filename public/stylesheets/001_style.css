@@ -1,0 +1,95 @@
+body {
+  background: #ddd url(/images/pinstripes.png) repeat scroll 0%;
+  color: #222; /* Foreground color used for text */
+  font-family: Helvetica;
+  font-size: 14px;
+  margin: 0; /* Amount of negative space around the outside of the body */
+  padding: 0; /* Amount of negative space around the inside of the body */
+}
+
+div#namecompany, dl {
+  margin: 10px;
+}
+
+dl {
+  list-style: none;
+  padding: 0;
+}
+dt, dd {
+  background-color: #fff; /* Background color */
+  color: #222222; /* Foreground color used for text */
+  border: 1px solid #999;
+  font-weight: bold;
+  margin: 0;
+  padding: 12px 10px;
+}
+
+dt:first-child {
+  -webkit-border-top-left-radius: 8px;
+}
+dt:first-child + dd { /* This rounds the first definition itrm */
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+}
+dd:last-child {
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-top: 0;
+}
+dt {
+  float: left;
+  border: 0;
+  padding-top: 13px;
+  background-color: transparent;
+  color: #516691;
+  text-align: right;
+  width: 60px;
+}
+
+/* title bar */
+h1 {
+  color: #222;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  text-shadow: 0px 1px 0px #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom,
+  from(#ccc), to(#999));
+}
+
+a.telophone_number {
+  text-decoration: none;
+  color: #222;
+}
+
+
+ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+ul li a {
+  border: 1px solid #999;
+  color: #222;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: -1px;
+  padding: 12px 10px;
+  text-decoration: none;
+  background: #fff url(/images/listArrow.png) no-repeat right center;
+}
+ul li:first-child a {
+  -webkit-border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+}
+ul li:last-child a {
+  -webkit-border-bottom-left-radius: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+}
+ul li a:active,ul li a:hover {
+  background-color:blue;
+  color:white;
+}

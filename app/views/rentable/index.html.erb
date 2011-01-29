@@ -1,0 +1,7 @@
+<h1>Categories</h1>
+
+<ul>
+<% @categoties.each do |categotry| %>
+  <li><%= link_to categotry.category, category_lookup_path(categotry.category) %></li>
+<% end %>
+</ul>

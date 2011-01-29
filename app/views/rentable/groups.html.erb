@@ -1,0 +1,10 @@
+<h1>Listings for <%= params[:category] %> <%= params[:rent_group]%></h1>
+
+<ul>
+<% @rent_groups.each do |rent_group| %>
+    <% @available = Rentable.how_many(params[:category],params[:rent_group],rent_group.branch_number) %>
+  <li>
+    <%= link_to @available.to_s + ' at '+rent_group.branch_name, category_lookup_path(params[:category], params[:rent_group], rent_group.branch_number ) %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,7 @@
+<h1>Listings for <%= params[:category]%></h1>
+
+<ul>
+<% @rent_groups.each do |rent_group| %>
+  <li><%= link_to rent_group.rent_group, category_lookup_path(params[:category], rent_group.rent_group) %></li>
+<% end %>
+</ul>
