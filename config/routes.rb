@@ -1,6 +1,9 @@
 Trucks::Application.routes.draw do
   
   get "rentable" => "rentable#index"
+  get "iphone" => "welcome#iphone"
+  
+  get "index" => "welcome#index"
   
   root :to => "welcome#index"
   
