@@ -28,7 +28,6 @@ ul {
 	padding: 0;
 }
 ul li a {
-	background-color: #FFF; 
 	border: 1px solid #999; 
 	color: #222; 
 	display: block; 
@@ -37,6 +36,7 @@ ul li a {
 	margin-bottom: -1px; 
 	padding: 12px 10px; 
 	text-decoration: none;
+  	background: #fff url(/images/listArrow.png) no-repeat right center;
 }
 ul li:first-child a {
 	-webkit-border-top-left-radius: 8px; 
@@ -47,13 +47,14 @@ ul li:last-child a {
 	-webkit-border-bottom-right-radius: 8px;
 } 
 ul li a:active,ul li a:hover {
-	background-color:blue; 
+	background: #98002b url(/images/listArrowSel.png) no-repeat right center;
 	color:white;
 } 
 
 dl {
-  list-style: none;
-  padding: 0;
+	list-style: none;
+	padding: 0;
+	margin: 10px;
 }
 dt, dd {
   background-color: #fff; /* Background color */
